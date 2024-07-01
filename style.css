@@ -24,12 +24,13 @@ nav {
 
 .container {
   width: 80%;
-  height: 100%;
+  height: 60px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
+  background-color: red;
 }
 
 .container h1 {
@@ -92,14 +93,19 @@ nav {
   }
   .container {
     width: 85%;
+    position: relative;
   }
   .container h1 {
     /* color: #0f1724; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
+    left: 0;
     top: 0;
     bottom: 0;
-    left: 0;
-    margin: 0;
+    /* right: 0; */
+    margin: auto;
     z-index: 10;
   }
   .link-wrapper {
@@ -109,16 +115,17 @@ nav {
     display: none;
   }
   .resp-icons {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: auto;
     height: auto;
     position: absolute;
     bottom: 0;
     top: 0;
     right: 0;
-    margin: 0;
+    margin: auto;
     z-index: 10;
-    /* background-color: red; */
   }
 
   .close {
