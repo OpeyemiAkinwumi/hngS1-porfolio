@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap");
+
+/* font-family: "Ojuju", sans-serif; */
+
+/* font-family: "Rowdies", sans-serif; */
+
 /* font-family: "Poppins", sans-serif; */
 
 * {
@@ -12,6 +20,14 @@ body {
   background-color: #0f1724;
   position: relative;
 }
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Ojuju", sans-serif;
+} */
 
 nav {
   width: 100%;
@@ -185,6 +201,85 @@ nav {
   }
 }
 
+#projects {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.hero-container h1 {
+  font-size: 4rem;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  line-height: normal;
+  position: relative;
+}
+.name {
+  position: relative;
+}
+
+.name::after {
+  content: "Opeyemi";
+  color: #13adc7;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  z-index: -1;
+}
+.hero-container p {
+  max-width: 800px;
+  margin-left: 60px;
+  margin-bottom: 30px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.77);
+}
+
+.cta {
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  margin-left: 90px;
+  background-image: linear-gradient(
+    to right,
+    #13adc7 0%,
+    #6978d1 67%,
+    #945dd6 100%
+  );
+  color: white;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 800px) {
+  .hero-container h1 {
+    margin-left: 20px;
+    font-size: 2.5rem;
+  }
+  .name::after {
+    top: -3px;
+    right: -3px;
+  }
+  .hero-container p {
+    max-width: 500px;
+    margin-left: 50px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Animation for Responsiveness */
 @keyframes fade-in {
   100% {
     opacity: 1;
