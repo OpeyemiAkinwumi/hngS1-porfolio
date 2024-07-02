@@ -149,7 +149,7 @@ nav {
   .responsive-wrapper {
     width: 100%;
     height: 100vh;
-    background-color: rgba(255, 255, 255, 0.972);
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -201,7 +201,7 @@ nav {
   }
 }
 
-#projects {
+#hero {
   width: 100%;
   height: 80vh;
   display: flex;
@@ -283,6 +283,125 @@ nav {
 }
 @media screen and (max-width: 480px) {
   .hero-container {
+    width: 92%;
+  }
+}
+
+/* // Projects Section \\ */
+
+#projects {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.projects-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  margin: 0 auto;
+}
+.projects-container h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.pro-wrapper {
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  align-self: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 400px 400px;
+  column-gap: 80px;
+  row-gap: 60px;
+}
+.pro {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  width: 350px;
+  height: 100%;
+  padding: 0 10px;
+  border: 2px solid rgba(255, 255, 255, 0.612);
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.image-wrapper {
+  width: 320px;
+  height: 160px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+  overflow: hidden;
+}
+.content h3 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+.content p {
+  font-size: 0.9rem;
+  font-weight: 200;
+  color: rgba(255, 255, 255, 0.77);
+  margin-top: 10px;
+}
+.line {
+  width: 150px;
+  height: 1.7px;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-image: linear-gradient(
+    to right,
+    #13adc7 0%,
+    #6978d1 67%,
+    #945dd6 100%
+  );
+}
+
+.check {
+  width: 100px;
+  height: 30px;
+  font-size: 0.9rem;
+  margin: 0;
+  margin-top: 10px;
+  align-self: flex-start;
+}
+
+@media screen and (max-width: 950px) {
+  .projects-container {
+    width: 90%;
+  }
+  .pro-wrapper {
+    column-gap: 30px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .projects-container {
+    width: 90%;
+  }
+  .pro-wrapper {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .projects-container {
     width: 92%;
   }
 }
