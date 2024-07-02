@@ -121,7 +121,7 @@ nav {
     bottom: 0;
     /* right: 0; */
     margin: auto;
-    z-index: 10;
+    z-index: 999;
   }
   .link-wrapper {
     display: none;
@@ -140,7 +140,7 @@ nav {
     top: 0;
     right: 0;
     margin: auto;
-    z-index: 10;
+    z-index: 999;
   }
 
   .close {
@@ -161,6 +161,7 @@ nav {
     right: 0;
     margin: 0;
     opacity: 0;
+    z-index: 950;
     display: none;
   }
 
@@ -296,6 +297,7 @@ nav {
   justify-content: center;
   align-items: center;
   color: white;
+  margin: 20px 0;
 }
 .projects-container {
   width: 80%;
@@ -344,6 +346,9 @@ nav {
   margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-top-left-radius: 30px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -404,6 +409,9 @@ nav {
   .projects-container {
     width: 92%;
   }
+  .pro-wrapper {
+    row-gap: 15px;
+  }
   .content {
     width: 300px;
     height: 100%;
@@ -414,6 +422,9 @@ nav {
     height: 160px;
     margin: 0 auto;
     margin-top: 10px;
+  }
+  .content p {
+    font-size: 0.8rem;
   }
 }
 
