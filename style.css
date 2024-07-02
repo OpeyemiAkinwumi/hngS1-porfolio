@@ -404,6 +404,17 @@ nav {
   .projects-container {
     width: 92%;
   }
+  .content {
+    width: 300px;
+    height: 100%;
+    padding: 0 5px;
+  }
+  .image-wrapper {
+    width: 280px;
+    height: 160px;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
 }
 
 /* Animation for Responsiveness */
