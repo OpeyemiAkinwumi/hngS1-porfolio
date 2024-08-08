@@ -18,3 +18,33 @@ closeBtn.addEventListener("click", () => {
   modal.style.display = "none";
   logo.style.color = "#fff";
 });
+
+const technologies = [
+  {
+    skill: "Html",
+    level: 80,
+  },
+  {
+    skill: "CSS",
+    level: 80,
+  },
+  {
+    skill: "JavaScript",
+    level: 80,
+  },
+  {
+    skill: "React",
+    level: 50,
+  },
+];
+
+function checkLevel(score) {
+  if (score >= 80 && score <= 100) {
+    return "Advanced";
+  } else if (score >= 50 && score < 80) {
+    return "Intermediary";
+  } else return "Beginner";
+}
+
+const skill = checkLevel(89);
+console.log(skill);
